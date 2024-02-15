@@ -21,6 +21,13 @@ function renderSinglePlayer() {
       )
 }
 
+// const example = `<div key=${player.id} className="players" >
+// <h2>${player.name}</h2>
+// <h4>${player.breed}</h4>
+// <h4>${player.status}</h4>
+// <img src=${player.imageUrl} />
+// </div>`
+
 useEffect(() => {
     async function singlePlayersHandler() {
       const result = await fetchSinglePlayer(id);

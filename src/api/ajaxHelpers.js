@@ -3,7 +3,7 @@ const BASE_URL =
 // previous mistake fetchAllPlayer 
 export async function fetchAllPlayers() {
   try {
-    const fetchAllPlayerUrl = `{BASE_URL}`;
+    const fetchAllPlayerUrl = `${BASE_URL}`;
     const response = await fetch(fetchAllPlayerUrl);
     // const response = await fetch(BASE_URL);
     const result = await response.json();
