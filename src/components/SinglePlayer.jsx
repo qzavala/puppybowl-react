@@ -7,6 +7,8 @@ export default function SinglePlayer() {
     const [player, setPlayer] = useState({});
     let { id } = useParams();
 
+// example comment
+
 function renderSinglePlayer() {
     console.log("player: ", player);
     return (
