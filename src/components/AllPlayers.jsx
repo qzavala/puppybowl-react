@@ -19,7 +19,7 @@ export default function AllPlayers() {
             <h4>{player.status}</h4>
             <div className="img-bttn-div">
               <img src={player.imageUrl} />
-              <button onClick = {() => navigate(`/players/${player.id}`)} >See Details</button>
+              <button onClick = {() => navigate(`/player/${player.id}`)} >See Details</button>
               <button onClick={() => handleDelete(player.id)} >Remove</button>
             </div>
           </div>

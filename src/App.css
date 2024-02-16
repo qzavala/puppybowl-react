@@ -50,10 +50,11 @@ body,
 body > div {
   height: 100vh;
   width: 100vw;
+  /* justify-content: center; */
 }
 
 #navbar {
-  padding: 2em;
+  padding: 20px;
   justify-content: space-evenly;
 }
 #container {
@@ -83,4 +84,8 @@ body > div {
 
 .players {
   width: 200px;
+}
+
+a{
+  justify-content: space-around;
 }

@@ -30,14 +30,14 @@ export async function fetchSinglePlayer(playerId) {
 export async function removePlayer(playerId) {
   try {
     console.log("Deleting Player: ", playerId);
-    const deletePlayer = `${BASE_URL}/players/${playerId}`;
+    const deletePlayer = `${BASE_URL}/${playerId}`;
     const response = await fetch(deletePlayer, {
       method: "DELETE",
     });
     console.log("removed response: ", response);
     const result = await response.json();
     console.log("removed Player :", result);
-    return result.data.player;
+    // return result.data.player;
   } catch (err) {
     console.error(
       `Whoops, trouble removing player #${playerId} from the roster!`,
@@ -48,7 +48,7 @@ export async function removePlayer(playerId) {
 
 export async function addNewPlayer(playerObj) {
   try {
-    const addNewPlayerUrl = `${BASE_URL}/players`;
+    const addNewPlayerUrl = `${BASE_URL}`;
     const response = await fetch(addNewPlayerUrl, {
       method: "POST",
       headers: {

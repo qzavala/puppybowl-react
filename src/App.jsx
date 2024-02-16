@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div>
-        yo
+        <h1>Puppy Bowl React</h1>
         <div id="Container">
           <NavBar />
           <div id="Main-Section">
